@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block cambio %}
+    <div>
+        <form action="/app/busqueda_publicacion/" method="GET">
+            {{ form.as_p }}
+            <input class="btn btn-primary btn-lg" type="submit" value="Buscar">
+        </form>
+    <br>
+    </div>
+    {% for publicacion in publicaciones %}
+        <h2>id del usuario: {{publicacion.nombreUsuario}}</h2>
+        <p class="lead mb-0">
+            fecha del comentario: {{publicacion.fecha}} <br>
+            comentario: {{publicacion.comentario}} <br>
+            equipos: {{publicacion.equipo1}} VS {{publicacion.equipo2}} <br>
+        </p>
+        <hr>
+    {% endfor %}
+{% endblock %}

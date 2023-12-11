@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block cambio %}
+
+<form  action="" method="post">
+    {% csrf_token %}
+    
+    {{ form.as_p }}
+
+    <input class="btn btn-primary btn-lg" type="submit" value="Crear">
+</form>
+
+{% endblock %}

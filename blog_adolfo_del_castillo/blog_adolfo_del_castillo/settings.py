@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'AppCoder',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -76,10 +77,11 @@ WSGI_APPLICATION = 'blog_adolfo_del_castillo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation

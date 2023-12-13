@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 
 {% block cambio %}
+
+<div class="section" >
+    <div class="container">
+      <div class="h4 text-center mb-4 title">Usuarios</div>
+      <div class="card" >
+        <div class="card-body" >
+
     <div>
         <form action="/app/busqueda_publicacion/" method="GET">
             {{ form.as_p }}
@@ -13,8 +20,11 @@
         <p class="lead mb-0">
             fecha del comentario: {{publicacion.fecha}} <br>
             comentario: {{publicacion.comentario}} <br>
-            equipos: {{publicacion.equipo1}} VS {{publicacion.equipo2}} <br>
         </p>
         <hr>
     {% endfor %}
+</div>
+</div>
+</div>
+</div>
 {% endblock %}

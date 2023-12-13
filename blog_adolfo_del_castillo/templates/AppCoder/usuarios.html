@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 
 {% block cambio %}
+
+<div class="section" >
+    <div class="container">
+      <div class="h4 text-center mb-4 title">Usuarios</div>
+      <div class="card" >
+        <div class="card-body" >
+
     <div>
         <form action="/app/busqueda_usuario/" method="GET">
             {{ form.as_p }}
@@ -9,12 +16,18 @@
     <br>
     </div>
     {% for usuario in usuarios %}
-        <h2>id del usuario: {{usuario.nombreUsuario}}</h2>
-        <p class="lead mb-0">
-            nombre del usuario: {{usuario.nombre}} <br>
-            apellido del usuario: {{usuario.apellido}} <br>
-            email del usuario: {{usuario.email}}
-        </p>
-        <hr>
+            <h2>id del usuario: {{usuario.username}}</h2>
+            <p class="lead mb-0">
+                nombre del usuario: {{usuario.first_name}} <br>
+                apellido del usuario: {{usuario.last_name}} <br>
+                email del usuario: {{usuario.email}}
+            </p>
+            <hr>
     {% endfor %}
+
+
+</div>
+</div>
+</div>
+</div>
 {% endblock %}

@@ -1,9 +1,23 @@
-<nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-        <a class="navbar-brand" href="/app/usuarios/">Usuarios</a>
-        <a class="navbar-brand" href="/app/crear_publicacion/">Publicar</a>
-        <a class="navbar-brand" href="/app/publicaciones/">Publicaciones</a>
-        <a class="navbar-brand" href="/app/about_me/">Sobre mi</a>
-        <a class="btn btn-primary" href="/app/show/">Inicio</a>
-    </div>
-</nav>
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+      <div class="container">
+        <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">MI CV</a>
+          <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="/app/usuarios/">Usuarios</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="/app/crear_publicacion_form/">Publicar</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="/app/publicaciones/">Publicaciones</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="/app/about_me/">Sobre mi</a></li>
+                        
+            {% if usuario.is_authenticated %}
+              <li class="btn-primary"><a class="nav-link smooth-scroll" href="/accounts/logout/">Logout</a></li>
+            {% else %}
+              <li class="btn-primary"><a class="nav-link smooth-scroll" href="/accounts/login/">Login</a></li>
+            {% endif %}
+            
+          </ul>
+        </div>
+      </div>
+    </nav>

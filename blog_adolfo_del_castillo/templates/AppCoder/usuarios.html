@@ -15,17 +15,20 @@
         </form>
     <br>
     </div>
-    {% for usuario in usuarios %}
-            <h2>id del usuario: {{usuario.username}}</h2>
+    
+    {% for user in usuarios %}
+
+            <h2>id del usuario: {{user.username}}</h2>
             <p class="lead mb-0">
-                nombre del usuario: {{usuario.first_name}} <br>
-                apellido del usuario: {{usuario.last_name}} <br>
-                email del usuario: {{usuario.email}}
+                nombre del usuario: {{user.first_name}} <br>
+                apellido del usuario: {{user.last_name}} <br>
+                email del usuario: {{user.email}}
             </p>
+            
             <hr>
+
     {% endfor %}
-
-
+    
 </div>
 </div>
 </div>

@@ -12,5 +12,12 @@ class Usuario(models.Model):
 
 class Publicacion(models.Model):
     nombreUsuario = models.CharField(max_length=15)
+    titulo = models.CharField(max_length=15)
     comentario = models.CharField(max_length=200)
     fecha = models.DateField()
+
+class Comentarios(models.Model):
+    idPublicacion = models.IntegerField()
+    nombreUsuario = models.CharField(max_length=15)
+    comentario = models.CharField(max_length=200)
+    fecha = models.DateField() 

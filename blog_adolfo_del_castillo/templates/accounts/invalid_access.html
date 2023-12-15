@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block cambio %}
+
+<div class="section" >
+    <div class="container">
+      <div class="h4 text-center mb-4 title">Acceso Invalido</div>
+      <div class="card" >
+        <div class="card-body" >
+          
+            <h1>Tu usuario {{usuario}} no tiene acceso a los usuarios.</h1>
+
+            <a href="/app/about_me/">
+              <button>Ir a inicio</button>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

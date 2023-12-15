@@ -4,7 +4,7 @@
 
 <div class="section" >
     <div class="container">
-      <div class="h4 text-center mb-4 title">Usuarios</div>
+      <div class="h4 text-center mb-4 title">Proyectos</div>
       <div class="card" >
         <div class="card-body" >
 
@@ -18,8 +18,13 @@
     {% for publicacion in publicaciones %}
         <h2>id del usuario: {{publicacion.nombreUsuario}}</h2>
         <p class="lead mb-0">
-            fecha del comentario: {{publicacion.fecha}} <br>
-            comentario: {{publicacion.comentario}} <br>
+            <h3>Titulo: {{publicacion.titulo}}</h3> <br>
+            <h6>fecha del comentario: {{publicacion.fecha}}</h6> <br>
+            <p>
+                <a href="{% url 'PublicacionDetalle' publicacion.id %}">Detalles</a> <br>
+
+
+            </p>
         </p>
         <hr>
     {% endfor %}

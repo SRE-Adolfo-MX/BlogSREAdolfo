@@ -10,5 +10,8 @@ class BusquedaUsuarioForms(forms.Form):
     idUsuario = forms.CharField()
 
 class PublicacionForms(forms.Form):
+    titulo = forms.CharField()
     comentario = forms.CharField(widget=forms.Textarea)
     
+class ComentarioForms(forms.Form):
+    comentario = forms.CharField(widget=forms.Textarea)

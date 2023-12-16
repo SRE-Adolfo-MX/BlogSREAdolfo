@@ -4,7 +4,7 @@
 
 <div class="section" >
     <div class="container">
-      <div class="h4 text-center mb-4 title">Detalle del Proyecto</div>
+      <div class="h4 text-center mb-4 title">Detalle del Proyecto </div>
       <div class="card" >
         <div class="card-body" >
           
@@ -14,9 +14,19 @@
                 <h6><b>fecha del comentario: </b> {{publicacion.fecha}}</h6> <br>
                 <h4> <b>Comentario: </b>  {{publicacion.comentario}}</h4> <br>
 
-                <a href="{% url 'PublicacionEditar' publicacion.id %}">Editar</a> <br>
+                {% if request.user.username == publicacion.nombreUsuario %}
 
-                <a href="{% url 'PublicacionEliminar' publicacion.id %}">Eliminar</a> <br>
+                  <a href="{% url 'PublicacionEditar' publicacion.id %}">Editar</a> <br>
+
+                  {% endif %}
+
+                {% if request.user.is_staff %}
+  
+                  <a href="{% url 'PublicacionEliminar' publicacion.id %}">Eliminar</a> <br>
+
+                {% endif %}
+
+                
 
                 <a href="{% url 'ComentarPublicacion' publicacion.id %}">Comentar</a>
             </p>

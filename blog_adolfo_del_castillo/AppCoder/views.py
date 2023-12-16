@@ -8,7 +8,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth.models import User
 from django.views.generic import DetailView, UpdateView, DeleteView, CreateView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, AccessMixin
+from django.contrib.auth import logout
 
 # Create your views here.
 
@@ -130,7 +131,9 @@ class PublicacionActualizar(UpdateView):
     template_name = "AppCoder/crear_publicacion.html"
     fields = ["titulo", "comentario"]
 
+
 class PublicacionEliminar(DeleteView):
+    #permission_required = 'is_staff'
     model = Publicacion
     template_name = "AppCoder/eliminar_publicacion.html"
     success_url = "/app/publicaciones/"

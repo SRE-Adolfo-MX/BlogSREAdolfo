@@ -12,7 +12,7 @@ class Usuario(models.Model):
 
 class Publicacion(models.Model):
     nombreUsuario = models.CharField(max_length=15)
-    titulo = models.CharField(max_length=15)
+    titulo = models.CharField(max_length=50)
     comentario = models.CharField(max_length=200)
     fecha = models.DateField()
 

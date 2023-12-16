@@ -1,4 +1,4 @@
-# Tercera-pre-entrega-DelCastilloGomezAdolfo
+# Ultima-entrega-DelCastilloGomezAdolfo-Blog
 
 Este es la ultima entrega del curso Python en CoderHouse!
 

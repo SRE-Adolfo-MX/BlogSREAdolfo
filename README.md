@@ -75,6 +75,6 @@ Si el usuario logeado no tiene rol de super usuario se mostrara el siguiente men
 
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/blog_adolfo_del_castillo/imag/Image7.png)
 
-El video del proyecto corriendo esta en la carpeta:
+El video del proyecto corriendo esta en drive ya que pesa bastante y el repositorio no soporta el tamanio:
 
-/blog_adolfo_del_castillo/Video/ProyectoFinal_PythonDjango.mov
+https://drive.google.com/file/d/14AW2_PZtXwDcLfjBg-wBbbfwojjtCUye/view?usp=sharing

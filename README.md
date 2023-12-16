@@ -74,3 +74,7 @@ Si nos logeamos correctamente nos permitira a aceder a los detalles de las publi
 Si el usuario logeado no tiene rol de super usuario se mostrara el siguiente mensaje en la seccion de usuario.
 
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/blog_adolfo_del_castillo/imag/Image7.png)
+
+El video del proyecto corriendo esta en la carpeta:
+
+/blog_adolfo_del_castillo/Video/ProyectoFinal_PythonDjango.mov
